@@ -29,6 +29,7 @@ import af.asr.cryptojce.exception.common.NoSuchAlgorithmException;
 import af.asr.cryptojce.exception.crypto.exception.InvalidDataException;
 import af.asr.cryptojce.exception.crypto.exception.InvalidKeyException;
 import af.asr.cryptojce.exception.crypto.exception.InvalidParamSpecException;
+import af.asr.cryptojce.exception.crypto.exception.SignatureException;
 import af.asr.cryptojce.exception.crypto.spi.CryptoCoreSpec;
 import af.asr.cryptojce.util.CryptoUtils;
 import af.asr.cryptojce.util.SecurityExceptionCodeConstant;
