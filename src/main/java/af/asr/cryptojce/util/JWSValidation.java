@@ -22,7 +22,6 @@ import org.jose4j.jws.JsonWebSignature;
 import org.jose4j.lang.JoseException;
 import org.springframework.stereotype.Component;
 
-
 /**
  *
  * This class will verify and sign the JWT
