@@ -21,11 +21,11 @@ public class CryptoUtils {
      */
     public static void verifyData(byte[] data) {
         if (data == null) {
-            throw new NullDataException(SecurityExceptionCodeConstant.MOSIP_NULL_DATA_EXCEPTION.getErrorCode(),
-                    SecurityExceptionCodeConstant.MOSIP_NULL_DATA_EXCEPTION.getErrorMessage());
+            throw new NullDataException(SecurityExceptionCodeConstant.PHOENIX_NULL_DATA_EXCEPTION.getErrorCode(),
+                    SecurityExceptionCodeConstant.PHOENIX_NULL_DATA_EXCEPTION.getErrorMessage());
         } else if (data.length == 0) {
-            throw new InvalidDataException(SecurityExceptionCodeConstant.MOSIP_NULL_DATA_EXCEPTION.getErrorCode(),
-                    SecurityExceptionCodeConstant.MOSIP_NULL_DATA_EXCEPTION.getErrorMessage());
+            throw new InvalidDataException(SecurityExceptionCodeConstant.PHOENIX_NULL_DATA_EXCEPTION.getErrorCode(),
+                    SecurityExceptionCodeConstant.PHOENIX_NULL_DATA_EXCEPTION.getErrorMessage());
         }
     }
 

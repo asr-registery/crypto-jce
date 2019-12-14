@@ -1,7 +1,7 @@
 package af.asr.cryptojce.util;
 
 public enum HMACUtilConstants {
-	MOSIP_NO_SUCH_ALGORITHM_ERROR_CODE("KER-UTL-203", "No such algorithm for the input");
+	PHOENIX_NO_SUCH_ALGORITHM_ERROR_CODE("KER-UTL-203", "No such algorithm for the input");
 
 	public final String errorCode;
 	public final String errorMessage;

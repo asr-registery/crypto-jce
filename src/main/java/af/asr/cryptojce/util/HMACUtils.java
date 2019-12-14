@@ -15,7 +15,7 @@ import java.security.spec.InvalidKeySpecException;
 import java.security.spec.KeySpec;
 
 /**
- * This class defines the HMAC Util to be used in MOSIP Project. The HMAC Util
+ * This class defines the HMAC Util to be used in PHOENIX Project. The HMAC Util
  * is implemented using desired methods of MessageDigest class of java security
  * package
  */
@@ -106,8 +106,8 @@ public final class HMACUtils {
 		try {
 			messageDigest = messageDigest != null ? messageDigest : MessageDigest.getInstance(HMAC_ALGORITHM_NAME);
 		} catch (java.security.NoSuchAlgorithmException exception) {
-			throw new NoSuchAlgorithmException(HMACUtilConstants.MOSIP_NO_SUCH_ALGORITHM_ERROR_CODE.getErrorCode(),
-					HMACUtilConstants.MOSIP_NO_SUCH_ALGORITHM_ERROR_CODE.getErrorMessage(), exception.getCause());
+			throw new NoSuchAlgorithmException(HMACUtilConstants.PHOENIX_NO_SUCH_ALGORITHM_ERROR_CODE.getErrorCode(),
+					HMACUtilConstants.PHOENIX_NO_SUCH_ALGORITHM_ERROR_CODE.getErrorMessage(), exception.getCause());
 		}
 	}
 
