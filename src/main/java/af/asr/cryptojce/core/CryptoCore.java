@@ -65,7 +65,7 @@ public class CryptoCore implements CryptoCoreSpec<byte[], byte[], SecretKey, Pub
     // will use in HSM
     private static final String RSA_ECB_NO_PADDING = "RSA/ECB/NoPadding";
 
-    @Value("${PHOENIX.kernel.keygenerator.asymmetric-key-length:2048}")
+    @Value("${kernel.keygenerator.asymmetric-key-length:2048}")
     private int asymmetricKeyLength;
 
     private static final String MGF1 = "MGF1";
@@ -74,25 +74,25 @@ public class CryptoCore implements CryptoCoreSpec<byte[], byte[], SecretKey, Pub
 
     private static final String AES = "AES";
 
-    @Value("${PHOENIX.kernel.crypto.gcm-tag-length:128}")
+    @Value("${kernel.crypto.gcm-tag-length:128}")
     private int tagLength;
 
-    @Value("${PHOENIX.kernel.crypto.symmetric-algorithm-name:AES/GCM/PKCS5Padding}")
+    @Value("${kernel.crypto.symmetric-algorithm-name:AES/GCM/PKCS5Padding}")
     private String symmetricAlgorithm;
 
-    @Value("${PHOENIX.kernel.crypto.asymmetric-algorithm-name:RSA/ECB/OAEPWITHSHA-256ANDMGF1PADDING}")
+    @Value("${kernel.crypto.asymmetric-algorithm-name:RSA/ECB/OAEPWITHSHA-256ANDMGF1PADDING}")
     private String asymmetricAlgorithm;
 
-    @Value("${PHOENIX.kernel.crypto.hash-algorithm-name:PBKDF2WithHmacSHA512}")
+    @Value("${kernel.crypto.hash-algorithm-name:PBKDF2WithHmacSHA512}")
     private String passwordAlgorithm;
 
-    @Value("${PHOENIX.kernel.crypto.sign-algorithm-name:SHA512withRSA}")
+    @Value("${kernel.crypto.sign-algorithm-name:SHA512withRSA}")
     private String signAlgorithm;
 
-    @Value("${PHOENIX.kernel.crypto.hash-symmetric-key-length:256}")
+    @Value("${kernel.crypto.hash-symmetric-key-length:256}")
     private int symmetricKeyLength;
 
-    @Value("${PHOENIX.kernel.crypto.hash-iteration:100000}")
+    @Value("${kernel.crypto.hash-iteration:100000}")
     private int iterations;
 
     //private Map<String, Cipher> cipherRegistry;
