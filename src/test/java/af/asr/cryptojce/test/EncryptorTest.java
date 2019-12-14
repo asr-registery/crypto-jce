@@ -12,6 +12,7 @@ import java.security.SecureRandom;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
 
+import af.asr.cryptojce.exception.crypto.spi.CryptoCoreSpec;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,7 +20,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import io.mosip.kernel.core.crypto.spi.CryptoCoreSpec;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

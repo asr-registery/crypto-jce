@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan({ "io.mosip.kernel.*" })
+@ComponentScan({ "af.asr.*" })
 public class CryptoJceBootApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CryptoJceBootApplication.class, args);
